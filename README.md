@@ -6,6 +6,19 @@ Python SDK for [PACT-AX](https://github.com/neurobloomai/pact-ax) — multi-agen
 pip install pact-ax-client
 ```
 
+## Examples
+
+| Example | What it shows |
+|---------|--------------|
+| [`examples/contract_review.py`](examples/contract_review.py) | Full pipeline: register → route → trust check → handoff → review → trust update → memory |
+
+```bash
+python examples/contract_review.py              # dry run — no server needed
+python examples/contract_review.py --live       # against http://localhost:8000
+```
+
+---
+
 ## 30-second quickstart
 
 ```python
