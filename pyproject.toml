@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pact-ax-client"
+version = "0.1.0"
+description = "Python SDK for PACT-AX — multi-agent collaboration primitives"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+keywords = ["ai", "agents", "multi-agent", "pact", "llm", "orchestration"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "httpx>=0.24.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-httpx>=0.21",
+    "respx>=0.20",
+]
+
+[project.urls]
+Homepage    = "https://github.com/neurobloomai/pact-ax"
+Repository  = "https://github.com/neurobloomai/pact-ax"
+Issues      = "https://github.com/neurobloomai/pact-ax/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pact_ax_client*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
