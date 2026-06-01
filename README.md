@@ -19,6 +19,24 @@ python examples/contract_review.py --live       # against http://localhost:8000
 
 ---
 
+## Start the server
+
+The SDK talks to a running `pact-ax` server. Start one locally:
+
+```bash
+pip install pact-ax
+uvicorn pact_ax.api.server:app --port 8000
+```
+
+Then verify it's up:
+
+```bash
+curl http://localhost:8000/health
+# {"status":"ok"}
+```
+
+---
+
 ## 30-second quickstart
 
 ```python
