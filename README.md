@@ -1,5 +1,9 @@
 # pact-ax-client
 
+![CI](https://github.com/neurobloomai/pact-ax-client/actions/workflows/ci.yml/badge.svg)
+![PyPI](https://img.shields.io/pypi/v/pact-ax-client)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 Python SDK for [PACT-AX](https://github.com/neurobloomai/pact-ax) — multi-agent collaboration primitives.
 
 ```
